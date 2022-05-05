@@ -4,32 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shooter Game</title>
+    <title>Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" ></script>
 </head>
 <body>
-  
-  <div id="gameFrame">
+    <div id="gameFrame" onclick="myGunSound.play()">
 
-    <div id="myHealthStatus"></div> // creating my health status baron the top of the frame 
-   
-    //  creating a game frame with equally divided five boxes 
-   
-    <div class="enemy" id="enemy1" onclick="Shoot(this)"></div>
-    <div class="enemy" id="enemy2" onclick="Shoot(this)"></div>
-    <div class="enemy" id="enemy3" onclick="Shoot(this)"></div>
-    <div class="enemy" id="enemy4" onclick="Shoot(this)"></div>
-    <div class="enemy" id="enemy5" onclick="Shoot(this)"></div>
-  
-  </div>
-  
-  <p style="text-align: center;">
-    <button onclick="randomEnemyAttacks()">NEW GAME</button>
-  </p>
-
-
+        <div id="statusBar"></div>
+      
+        <div class="enemy" id="enemy1" onclick="Shoot(this)"></div>
+        <div class="enemy" id="enemy2" onclick="Shoot(this)"></div>
+        <div class="enemy" id="enemy3" onclick="Shoot(this)"></div>
+        <div class="enemy" id="enemy4" onclick="Shoot(this)"></div>
+        <div class="enemy" id="enemy5" onclick="Shoot(this)"></div>
+      
+        <button onclick="newGame()">PLAY GAME</button>
+      </div>
+      
+      <p style="text-align: center;">
+      </p>  
 </body>
-
 </html>
-  
